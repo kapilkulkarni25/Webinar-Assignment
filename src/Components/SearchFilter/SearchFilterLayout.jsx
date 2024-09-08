@@ -21,7 +21,7 @@ const SearchFilter = () => {
     const handleTopicChange = (e) => {
         const value = e.target.value;
         // Clear selected Topic if empty string is selected
-        dispatch(setSelectedTopic(value ? [value] : []));
+        dispatch(setSelectedTopic(value ? value : ''));
     };
 
     return (
@@ -47,7 +47,7 @@ const SearchFilter = () => {
                     <Select
                         labelId="topic-select-label"
                         id="topic-select"
-                        value={selectedTopic[0] || ''}
+                        value={selectedTopic || ''}
                         label="Topic"
                         className='select-filter'
                         onChange={handleTopicChange}
