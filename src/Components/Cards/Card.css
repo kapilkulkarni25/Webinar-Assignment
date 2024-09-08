@@ -43,7 +43,7 @@
 }
 
 .card-img {
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   width: 76px;
   height: auto;

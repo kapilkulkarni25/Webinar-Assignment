@@ -10,6 +10,12 @@ const InstructorImage = ({ setFieldValue, value }) => {
     const handleImageChange = (event) => {
         const file = event.target.files[0];
         if (file) {
+            const validTypes = ['image/jpeg', 'image/png', 'image/gif'];
+            if (!validTypes.includes(file.type)) {
+                alert('Unsupported file type! Please upload a jpg, png, or gif image.')
+                setFieldValue('userAvatar', '', false);
+                return;
+            }
             const reader = new FileReader();
             reader.onloadend = () => {
                 setImagePreview(reader.result); // Show the image preview
