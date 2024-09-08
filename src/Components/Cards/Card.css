@@ -1,0 +1,100 @@
+.card-wrapper.MuiCardContent-root {
+  padding: 20px 20px 27px 20px;
+}
+
+.container.MuiGrid2-container {
+  gap: 28px;
+}
+
+.card {
+  border: 1px solid var(--gray-1);
+  background: var(--white);
+  box-shadow: 0 20px 46px -24px rgba(14, 16, 19, 0.12);
+  width: 380px;
+  border-radius: 24px;
+  box-shadow: 0px 20px 46px -24px var(--box-shadow);
+}
+
+.card-header {
+  border-radius: 16px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 25px 20px;
+  color: var(--white);
+}
+
+.card-header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-name {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.card-position,
+.card-company {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.card-img {
+  object-fit: contain;
+  object-position: center;
+  width: 76px;
+  height: auto;
+  border-radius: 16px;
+}
+
+.card-content {
+  display: flex;
+  margin-top: 16px;
+  width: 230px;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.card-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+.card-domain {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.card-topic {
+  color: var(--dark-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  margin-bottom: 2px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.card-date {
+  color: var(--dark-text-2);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.card-actions.MuiCardActions-root {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0px 20px 17px 20px;
+}

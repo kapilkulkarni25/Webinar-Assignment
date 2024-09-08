@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --white: #ffffff;
+  --blue: #0e51f1;
+  --dark-text: #0e1013;
+  --dark-text-2: #2e333b;
+  --input-bg: #f2f4f8;
+  --gray-1: #e3e7ec;
+  --box-shadow: #0e10131f;
+}
+
+.text-center {
+  text-align: center;
+}

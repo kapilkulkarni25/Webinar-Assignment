@@ -1,0 +1,48 @@
+.search-wrapper {
+  margin: 9px 0 28px;
+}
+
+.search-input.MuiOutlinedInput-root {
+  padding-left: 12px;
+  background: var(--white);
+  border-radius: 10px;
+  color: #636973;
+}
+.search-input.MuiOutlinedInput-notchedOutline {
+  border: 1px solid var(--gray-1);
+}
+
+.search-input #search-webinar-input {
+  font-size: 14px;
+}
+.search-input #search-webinar-input::placeholder {
+  color: #636973;
+  opacity: 1;
+}
+
+.search-input #search-webinar-input::-ms-input-placeholder {
+  color: #636973;
+}
+.search-input {
+  width: 380px;
+}
+
+.select-filter {
+  width: 220px;
+}
+.select-filter .MuiOutlinedInput-notchedOutline {
+  border: 1px solid var(--gray-1);
+  border-radius: 10px;
+}
+
+.select-filter-label.MuiFormLabel-root {
+  font-size: 14px;
+  top: -4px;
+  color: var(--dark-text-2);
+}
+.select-filter.MuiInputBase-root {
+  padding-right: 7px;
+}
+.select-filter .MuiSelect-select {
+  padding: 10px 12px;
+}

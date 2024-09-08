@@ -1,0 +1,65 @@
+.popup-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 910px;
+  max-height: 839px;
+  height: calc(100vh - 20px);
+  overflow-y: scroll;
+  background-color: var(--white);
+  border: 1px solid var(--gray-1);
+  border-radius: 12px;
+  padding: 20px 0;
+  box-shadow: 0px 20px 46px -24px var(--dark-text);
+}
+.popup-modal::-webkit-scrollbar {
+  width: 10px;
+}
+
+.popup-modal::-webkit-scrollbar-track {
+  box-shadow: var(--white);
+  border-radius: 10px;
+}
+
+.popup-modal::-webkit-scrollbar-thumb {
+  background: #d5dbe4;
+  border-radius: 280px;
+}
+
+.popup-modal::-webkit-scrollbar-thumb:hover {
+  background: #d5dbe4;
+}
+.form-header-wrap {
+  width: 100%;
+  padding: 0 31px 30px;
+  border-bottom: 1px solid var(--gray-1);
+  margin-bottom: 43px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-close.MuiSvgIcon-fontSizeMedium {
+  cursor: pointer;
+  font-size: 24px;
+  color: #444952;
+}
+
+.form-section-wrapper {
+  display: flex;
+  gap: 32px;
+  padding-left: 32px;
+  padding-right: 31px;
+}
+
+.form-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--dark-text-2);
+  margin-bottom: 30px;
+}

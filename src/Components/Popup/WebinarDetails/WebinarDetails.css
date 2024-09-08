@@ -1,0 +1,35 @@
+.webinar-details-wrapper {
+  margin: 13px 0 73px;
+}
+.webinar-details-wrapper .form-input.MuiFormControl-root {
+  margin: 12px 0 13px;
+}
+.webinar-details-wrapper .form-input-date.MuiFormControl-root,
+.webinar-details-wrapper .form-input-time.MuiFormControl-root {
+  margin: 4px 0 0;
+}
+.date-time-container {
+  display: flex;
+  width: 585px;
+  max-width: 100%;
+  gap: 24px;
+  color: var(--dark-text-2);
+  flex-wrap: wrap;
+}
+
+.date-time-wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-action-wrap {
+  border-radius: 0;
+  display: flex;
+  width: 100%;
+  gap: 37px;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 20px 32px 0;
+  border-top: 1px solid var(--gray-1);
+}
