@@ -8,7 +8,7 @@ export const webinarSlice = createSlice({
         webinars: INITIAL_USER_DATA,
         filteredWebinars: INITIAL_USER_DATA,
         searchQuery: '',
-        selectedTopic: '',  // Updated to a string
+        selectedTopic: '',
     },
     reducers: {
         addWebinar: (state, action) => {
@@ -40,14 +40,14 @@ export const webinarSlice = createSlice({
                 const formattedDate = webinar.startDate ? formatDate(webinar.startDate).toLowerCase() : '';
 
                 // Check if any field of the fields or formatted date includes the query
-                const matchesSearchQuery = Object.values(webinar).some((value) =>
+                const searchQueryMatch = Object.values(webinar).some((value) =>
                     String(value).toLowerCase().includes(searchQueryLower) || formattedDate.includes(searchQueryLower)
                 );
 
                 // Check if the webinar includes the selected topic
-                const matchesSelectedTopic = state.selectedTopic === '' || webinar.topics.includes(state.selectedTopic);
+                const searchSelectedTopic = state.selectedTopic === '' || webinar.topics.includes(state.selectedTopic);
 
-                return matchesSearchQuery && matchesSelectedTopic;
+                return searchQueryMatch && searchSelectedTopic;
             });
         },
         setSelectedTopic: (state, action) => {
@@ -58,13 +58,13 @@ export const webinarSlice = createSlice({
             state.filteredWebinars = state.webinars.filter((webinar) => {
                 const formattedDate = webinar.startDate ? formatDate(webinar.startDate).toLowerCase() : '';
 
-                const matchesSearchQuery = Object.values(webinar).some((value) =>
+                const searchQueryMatch = Object.values(webinar).some((value) =>
                     String(value).toLowerCase().includes(searchQueryLower) || formattedDate.includes(searchQueryLower)
                 );
 
-                const matchesSelectedTopic = state.selectedTopic === '' || webinar.topics.includes(state.selectedTopic);
+                const searchSelectedTopic = state.selectedTopic === '' || webinar.topics.includes(state.selectedTopic);
 
-                return matchesSearchQuery && matchesSelectedTopic;
+                return searchQueryMatch && searchSelectedTopic;
             });
         },
     },

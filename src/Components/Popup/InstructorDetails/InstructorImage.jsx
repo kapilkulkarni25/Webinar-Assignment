@@ -18,7 +18,7 @@ const InstructorImage = ({ setFieldValue, value }) => {
             }
             const reader = new FileReader();
             reader.onloadend = () => {
-                setImagePreview(reader.result); // Show the image preview
+                setImagePreview(reader.result); // Show the image preview in modal
                 setFieldValue('userAvatar', reader.result); // Store the image as base64
             };
             reader.readAsDataURL(file);

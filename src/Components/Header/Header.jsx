@@ -1,7 +1,9 @@
-import { useDispatch } from 'react-redux';
 import './header.css';
-import { openModal } from '../../features/Modal/ModalSlice';
 import { StyledButton } from '../Common/Button';
+
+import { useDispatch } from 'react-redux';
+import { openModal } from '../../features/Modal/ModalSlice';
+
 
 const Header = () => {
 

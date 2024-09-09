@@ -1,8 +1,10 @@
 import { CardActions, CardContent } from '@mui/material'
+
 import PropTypes from 'prop-types';
 
 import { StyledButton } from '../Common/Button'
 import { formatDate } from '../../utils/utils'
+
 import { useDispatch } from 'react-redux';
 import { deleteWebinar } from '../../features/Webinar/WebinarSlice';
 import { openModal } from '../../features/Modal/ModalSlice';
